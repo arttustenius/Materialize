@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <style>
+
+    header {
+        background: url(./img/lightshow.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+    }
+
+    section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+
+    @media screen and (max-width: 670px) {
+
+        header {
+            min-height: 500px;
+        }
+    }
+
+    .tabs .indicator {
+      background-color: blue;
+    }
+    .tabs .tab .a:focus, .tabs .tab a:focus.active {
+      background: transparent;
+    }
+
+  </style>
+ 
+  <title>Taitotalo</title>
+
+</head>
+
+<body>
+
+<header>
+
+  <nav>
+    <div class="nav-wrapper pink darken-1">
+      <a href="./index.html" class="brand-logo">TAITOTALO</a>
+      <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="badges.html">Services</a></li>
+        <li><a href="collapsible.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <ul class="sidenav pink darken-1" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="badges.html">Services</a></li>
+    <li><a href="collapsible.html">Contact</a></li>
+  </ul>
+  
+</header>
+
+<section class="container section scrollspy" id="photos">
+ 
+  <div class="row">
+
+    <div class="col s12 l4">
+      <img src="./img/mixer.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+
+    <div class="col s12 l6">
+      <h2 class="indigo-text text-darken-4">Moikkavaan</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quam, pariatur dolorum cum amet ipsam,
+         ipsa ducimus vitae saepe magni, aliquam neque fuga! Possimus, libero.</p>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col s12 l4 push-l7 offset-l1">
+      <img src="./img/music.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+
+    <div class="col s12 l6 pull-l5 right-align offset-l1">
+      <h2 class="indigo-text text-darken-4">Heip hei</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quam, pariatur dolorum cum amet ipsam,
+         ipsa ducimus vitae saepe magni, aliquam neque fuga! Possimus, libero.</p>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col s12 l4">
+      <img src="./img/organo.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+
+    <div class="col s12 l6">
+      <h2 class="indigo-text text-darken-4">Todella hieno</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quam, pariatur dolorum cum amet ipsam,
+         ipsa ducimus vitae saepe magni, aliquam neque fuga! Possimus, libero.</p>
+    </div>
+
+  </div>
+
+   </section>
+
+   <div class="parallax-container">
+    <div class="parallax">
+      <img src="./img/sound-studio.jpg" alt="" class="responsive-img">
+    </div>
+   </div>
+
+
+
+<div class="container section" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+            <h2 class="indigo-text text-darken-4">Mitä minä teen...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, aperiam fugiat veritatis id illum velit nesciunt aut mollitia aliquam perferendis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, aperiam fugiat veritatis id illum velit nesciunt aut mollitia aliquam perferendis.</p>
+      </div>
+
+      <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+              <li class="tab col s6">
+                  <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+              </li>
+              <li class="tab col s6">
+                  <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+              </li>
+          </ul>
+
+          <div class="col s12" id="photography">
+              <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias, aperiam fugiat veritatis id illum velit nesciunt aut mollitia aliquam perferendis.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestias, aperiam fugiat veritatis id illum velit nesciunt aut mollitia aliquam perferendis.</p>
+          </div>
+
+          <div class="col s12" id="editing">
+              <p class="flow-text indigo-text text-darken-4">EDITING</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias, aperiam fugiat veritatis id illum velit nesciunt aut mollitia aliquam perferendis.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias, aperiam fugiat veritatis id illum velit nesciunt aut mollitia aliquam perferendis.</p>
+          </div>
+      </div>
+    </div>
+</div>
+
+   <div class="parallax-container">
+    <div class="parallax">
+      <img src="./img/studio.png" alt="" class="responsive-img">
+    </div>
+   </div>
+
+      <section class="section container">
+
+        <div class="row">
+
+          <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">OTA YHTEYTTÄ</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, aperiam fugiat veritatis id illum velit nesciunt aut mollitia aliquam perferendis.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, aperiam fugiat veritatis id illum velit nesciunt aut mollitia aliquam perferendis.</p>
+          </div>
+            <div class="col s12 l5 offset-l2">
+              <form action="">
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" id="email">
+                  <label for="email">Sähköpostisi</label>
+                </div>
+
+                <div class="input-field">
+                  <i class="material-icons prefix">message</i>
+                  <textarea id="textarea" class="materialize-textarea"></textarea>
+                  <label for="textarea">Viestisi</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="date" class="datepicker">
+                  <label for="data">Valitse aika</label>
+                </div>
+
+                <div class="input-field">
+                  <p>Valitse palvelu</p>
+                  <p>
+                    <label>
+                      <input type="checkbox">
+                        <span>Photography</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox">
+                        <span>Editing</span>
+                    </label>
+                  </p>
+                </div>
+
+                <div class="input-field center">
+                  <button class="btn">Lähetä</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </section>
+
+        <footer class="page-footer grey darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 l6">
+                <h6>Tietoa minusta</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nihil ex sequi vero ipsum accusamus magni ea corporis facere nemo consequuntur, eum placeat explicabo et quia! Ratione fuga placeat assumenda.</p>
+              </div>
+              <div class="col s12 l4 offset-l2">
+                <h5>Yhteys</h5>
+                <ul>
+                  <li>
+                    <a href="" class="grey-text text-lighten-3">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="" class="grey-text text-lighten-3">LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="" class="grey-text text-lighten-3">Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright grey grey-text darken-4">
+            <div class="container center-align">
+              &copy; 2024 TAITOTALO
+            </div>
+
+          </div>
+        </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+ 
+    });
+
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.tabs').tabs();
+    $('.datepicker').datepicker({
+      disableWeekends: true
+    });
+    
+  });
+  </script>
+
+</body>
+</html>
